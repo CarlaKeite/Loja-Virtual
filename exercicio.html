@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu primeiro e-commerce</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    /* Estilo dos cartões de produtos */
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .produto {
+      flex: 1 1 250px;
+      max-width: 300px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .produto img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+
+    .descricao {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    .valor {
+      font-weight: bold;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .compra a {
+      background-color: #00796b;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+
+    <!-- Cabeçalho -->
+    <header class="header">
+      <h1>Loja de Roupas e Acessórios</h1>
+    </header>
+
+    <!-- Navegação -->
+    <nav class="topnav">
+      <a href="#">Home</a>
+      <a href="#">Roupas</a>
+      <a href="#">Acessórios</a>
+      <a href="#" aria-label="Carrinho de compras">
+        <img src="imagens/compra.jpg" width="40" alt="Carrinho">
+      </a>
+    </nav>
+
+    <!-- Produtos -->
+    <section class="produtos" aria-label="Produtos em destaque">
+
+      <article class="produto">
+        <img src="imagens/jaqueta.jpg" alt="Jaqueta de couro preta masculina">
+        <p class="descricao">Jaqueta de Couro - Roupa</p>
+        <p class="valor">R$ 279,00</p>
+        <p class="compra"><a href="#">COMPRAR</a></p>
+      </article>
+
+      <article class="produto">
+        <img src="imagens/bone.jpg" alt="Boné casual preto">
+        <p class="descricao">Boné - Acessório</p>
+        <p class="valor">R$ 79,00</p>
+        <p class="compra"><a href="#">COMPRAR</a></p>
+      </article>
+
+      <!-- Você pode duplicar mais produtos aqui -->
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2025 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+  </main>
+</body>
+</html>
